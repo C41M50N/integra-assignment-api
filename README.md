@@ -16,3 +16,39 @@ psql -h localhost -U user -d postgres < setup.sql
 ```bash
 go run main.go
 ```
+
+### Endpoints
+- get all users
+```http
+GET /users
+```
+
+- add user
+```http
+POST /users
+Body:
+{
+  first_name: string,
+  last_name: string,
+  department: string,
+}
+```
+
+- update user
+```http
+PUT /users/{id:int}
+Body:
+{
+  id: int,
+  first_name: string,
+  last_name: string,
+  email: string,
+  user_status: string,
+  department: string,
+}
+```
+
+- delete user
+```http
+DELETE /users/{id:int}
+```
