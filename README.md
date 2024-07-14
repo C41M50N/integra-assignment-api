@@ -1,5 +1,5 @@
 ## Integra Assignment API
-API server for managing users.
+API server for managing users. Usernames and emails are auto-generated. Usernames cannot be modified. All other fields can be modified.
 
 ### 1. Setup database
 - start/create postgres service
